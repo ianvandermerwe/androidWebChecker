@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="za.co.geckoweb.android.webchecker.CreateWebsite"
+    >
+
+    <!-- Bottom 1dp border -->
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_height="5dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        ></View>
+
+    <!-- Top 1dp border -->
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_height="5dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        ></View>
+
+    <!-- Right 1dp border -->
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_height="match_parent"
+        android:layout_width="5dp"
+        android:layout_alignParentRight="true"
+        ></View>
+
+    <!-- Left 1dp border -->
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_height="match_parent"
+        android:layout_width="5dp"
+        android:layout_alignParentLeft="true"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Website"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="website url"
+            android:id="@+id/website_url"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textAllCaps="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:id="@+id/website_add_btn"
+        />
+</RelativeLayout>
